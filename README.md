@@ -13,5 +13,5 @@ were making the UI a little wierd. So I added the pictures which was in the desi
 Data post functionality is done in the contacts section, formik validations are also done there.
 
 To run the application:
-run npm install
+run npm install and then
 run npm run dev
