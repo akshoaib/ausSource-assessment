@@ -7,18 +7,24 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // import "swiper/swiper-bundle.min.css";
 // import { Pagination } from "swiper/react";
 // import "swiper/components/pagination/pagination.min.css";
+import { useWindowSize } from "@uidotdev/usehooks";
+
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
 import "swiper/css/pagination";
 
 import "./style.css";
 const SwiperSlider = ({ customerData }) => {
+  const size = useWindowSize();
+
+  console.log({ size });
+
   return (
     <>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
-        slidesPerView={3}
+        slidesPerView={size?.width > 554 ? 3 : 2}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
         pagination={{ clickable: true }}
