@@ -1,0 +1,10 @@
+.banner-img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.hero {
+  /* background-color: #fbfbfd !important; */
+  height: 100%;
+  background-color: #fbfbfd !important;
+}

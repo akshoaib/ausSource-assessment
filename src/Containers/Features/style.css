@@ -1,0 +1,9 @@
+.feature-card {
+  box-shadow: 2px 2px 12px -2px #00000014;
+}
+.feature-card a {
+}
+.feature-image {
+  width: 70%;
+  margin: auto !important;
+}

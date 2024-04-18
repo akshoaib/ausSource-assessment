@@ -1,0 +1,18 @@
+.navbar-bg {
+  background-color: #fbfbfd !important;
+}
+.nav-logo > img {
+  /* width: 120px; */
+  /* height: 120px; */
+  object-fit: contain;
+  margin: 0 30px;
+}
+
+.navbar-nav {
+  gap: 4px;
+  display: flex;
+}
+
+.nav-link {
+  color: #9b9bae;
+}
