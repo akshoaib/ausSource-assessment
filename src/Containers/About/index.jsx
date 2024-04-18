@@ -51,11 +51,15 @@ const About = () => {
         </Row>
 
         <Row>
-          <Col md={4} className="d-flex flex-column justify-content-around">
+          <Col
+            md={4}
+            className="mx-auto d-flex flex-column justify-content-around"
+          >
             <Title
               content={
                 <>
-                  Productive & <br /> Customizable For <br /> <b>Developers</b>
+                  {/* Productive & <br /> Customizable For <br /> <b>Developers</b> */}
+                  Productive & Customizable For <br /> <b>Developers</b>
                 </>
               }
               varient="secondary"
