@@ -23,9 +23,7 @@ const CustomInput = ({
           className={`${inputs[varient]}`}
           onChange={onChange}
         />
-        {touched && error && (
-          <Text styles="text-danger" content={<>{error}</>} />
-        )}
+        {touched && error && <p className="text-danger">{error}</p>}
       </div>
     </>
   );

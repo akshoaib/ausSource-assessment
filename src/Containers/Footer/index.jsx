@@ -10,9 +10,14 @@ const Footer = () => {
     <>
       <Container fluid>
         <Row className="footer my-5">
-          <Col md={5}>
-            <div className="logo">
+          <Col md={5} className="logo">
+            <div className="logo d-flex justify-content-center flex-column">
               <img className="" src={footerLogo} />
+              {/* <Title
+              content={
+                <img width={50} height={40} className="" src={footerLogo} />
+              }
+            /> */}
               <Text content="Cras ultricies mi eu turpis sit hendrerit fringilla vestibulum ante ipsum primis in faucibus ultrices posuere cubilia." />
               <Text
                 icon={<SlSocialInstagram />}

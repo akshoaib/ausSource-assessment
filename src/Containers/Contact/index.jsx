@@ -12,7 +12,7 @@ import axios from "axios";
 import "./style.css";
 const Contact = () => {
   const postFormValues = async (values) => {
-    const res = await axios.post("/posts", { values });
+    const res = await axios.post("/postDummy", { values });
   };
 
   const formik = useFormik({
@@ -96,9 +96,9 @@ const Contact = () => {
 
         <Col md={6} className=" my-auto">
           <Title varient={"ternary"} content="Get in Touch" />
-          <Row>
-            <form onSubmit={formik.handleSubmit}>
-              <Col lg={6} className="mt-3">
+          <form onSubmit={formik.handleSubmit}>
+            <Row>
+              <Col xl={6} className="mt-3">
                 <CustomInput
                   label="Name"
                   varient="primary"
@@ -112,7 +112,7 @@ const Contact = () => {
                   onBlur={formik.handleBlur}
                 />
               </Col>
-              <Col lg={6} className="mt-3">
+              <Col xl={6} className="mt-3">
                 <CustomInput
                   label="Email Address"
                   varient="primary"
@@ -157,8 +157,8 @@ const Contact = () => {
               <Col md={12} className="mt-3">
                 <CustomButton varient="primary" text={"Send Message"} />
               </Col>
-            </form>
-          </Row>
+            </Row>
+          </form>
         </Col>
       </Row>
     </Container>

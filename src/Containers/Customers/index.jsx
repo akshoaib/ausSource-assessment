@@ -3,12 +3,10 @@ import { Col, Container, Row } from "react-bootstrap";
 import bobbie from "../../assets/bobby.jpg";
 import jashua from "../../assets/joshua.jpg";
 import sammie from "../../assets/sammy.jpg";
-import Comma from "../../assets/comma.png";
 import Title from "../../Components/UI/Title";
 import Text from "../../Components/UI/Text";
 import "./style.css";
 import SwiperSlider from "../../Components/SwiperSlider";
-import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 const customerData = [
